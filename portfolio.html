@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ram | Web Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+}
+
+body{
+  background:#0f172a;
+  color:white;
+}
+
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 50px;
+}
+
+.logo{
+  font-size:24px;
+  font-weight:600;
+}
+
+nav a{
+  margin-left:25px;
+  text-decoration:none;
+  color:white;
+}
+
+.hero{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:60px 50px;
+}
+
+.hero-text{
+  max-width:500px;
+}
+
+.hero-text h1{
+  font-size:42px;
+  margin-bottom:10px;
+}
+
+.hero-text p{
+  opacity:.8;
+  margin-bottom:25px;
+}
+
+.btn{
+  background:#38bdf8;
+  padding:12px 25px;
+  border-radius:8px;
+  color:black;
+  text-decoration:none;
+  font-weight:600;
+}
+
+.hero img{
+  width:280px;
+  height: 280px;
+  border-radius:50%;
+}
+
+section{
+  padding:60px 50px;
+}
+
+.section-title{
+  font-size:32px;
+  margin-bottom:30px;
+}
+
+.skills, .projects{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:#1e293b;
+  padding:25px;
+  border-radius:12px;
+  text-align:center;
+}
+
+footer{
+  text-align:center;
+  padding:20px;
+  background:#020617;
+}
+
+@media(max-width:768px){
+  header{
+    flex-direction:column;
+  }
+  .hero{
+
+    flex-direction:column;
+    text-align:center;
+  }
+  .hero img{
+
+    margin-top:30px;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Ram</div>
+  <nav>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <div class="hero-text">
+    <h1>Hi, I'm Ram 👋</h1>
+    <p>Web Developer | Trainer | SEO Specialist</p>
+    <a class="btn" href="#contact">Hire Me</a>
+  </div>
+  <img src="https://img.freepik.com/free-photo/side-view-man-reading-book-indoors_23-2149887834.jpg?semt=ais_hybrid&w=740&q=80">
+</div>
+
+<section id="skills">
+  <h2 class="section-title">Skills</h2>
+  <div class="skills">
+    <div class="card">HTML</div>
+    <div class="card">CSS</div>
+    <div class="card">JavaScript</div>
+    <div class="card">React</div>
+    <div class="card">SEO</div>
+    <div class="card">WordPress</div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2 class="section-title">Projects</h2>
+  <div class="projects">
+    <div class="card">Attendance System</div>
+    <div class="card">Certificate Generator</div>
+    <div class="card">React Quiz App</div>
+    <div class="card">SEO Audit Tool</div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="section-title">Contact</h2>
+  <div class="card">
+    <p>Email: ram@gmail.com</p>
+    <p>Phone: +91 90000 00000</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Ram. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
